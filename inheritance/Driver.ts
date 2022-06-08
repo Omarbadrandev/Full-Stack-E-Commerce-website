@@ -1,4 +1,4 @@
-import { Shape } from "../Shape";
+import { Shape } from "./Shape";
 import { Circle } from "./Circle";
 
 let myShape = new Shape(10, 15);
