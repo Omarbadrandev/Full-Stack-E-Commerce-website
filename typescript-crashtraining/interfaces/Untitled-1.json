@@ -1,0 +1,62 @@
+{
+	"knownSymbols": {
+		"Shape": [
+			{
+				"name": "Shape",
+				"path": "/Users/obadran/Desktop/projects/E-commerce Learning Project/Full-Stack-E-Commerce-website/inheritance/Shape.ts",
+				"type": "abstract class",
+				"isDefault": false
+			}
+		],
+		"Rectangle": [
+			{
+				"name": "Rectangle",
+				"path": "/Users/obadran/Desktop/projects/E-commerce Learning Project/Full-Stack-E-Commerce-website/inheritance/Rectangle.ts",
+				"type": "class",
+				"isDefault": false
+			}
+		],
+		"Circle": [
+			{
+				"name": "Circle",
+				"path": "/Users/obadran/Desktop/projects/E-commerce Learning Project/Full-Stack-E-Commerce-website/inheritance/Circle.ts",
+				"type": "class",
+				"isDefault": false
+			}
+		],
+		"Coach": [
+			{
+				"name": "Coach",
+				"module": ".7Coach",
+				"isDefault": false
+			},
+			{
+				"name": "Coach",
+				"module": ".",
+				"isDefault": false
+			},
+			{
+				"name": "Coach",
+				"path": "/Users/obadran/Desktop/projects/E-commerce Learning Project/Full-Stack-E-Commerce-website/interfaces/Coach.ts",
+				"type": "interface",
+				"isDefault": false
+			}
+		],
+		"CricketCoach": [
+			{
+				"name": "CricketCoach",
+				"path": "/Users/obadran/Desktop/projects/E-commerce Learning Project/Full-Stack-E-Commerce-website/interfaces/CricketCoach.ts",
+				"type": "class",
+				"isDefault": false
+			}
+		],
+		"GolfCoach": [
+			{
+				"name": "GolfCoach",
+				"path": "/Users/obadran/Desktop/projects/E-commerce Learning Project/Full-Stack-E-Commerce-website/interfaces/GolfCoach.ts",
+				"type": "class",
+				"isDefault": false
+			}
+		]
+	}
+}

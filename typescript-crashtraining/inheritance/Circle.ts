@@ -10,7 +10,9 @@ export class Circle extends Shape {
     //call superclass constructor
     super(theX, theY);
   }
+
   getInfo(): string {
     return super.getInfo() + `, radius=${this._radius}`;
   }
+  
 }
