@@ -10,8 +10,8 @@ import java.util.Set;
 // An entity represents a table stored in a database. Every instance of an entity represents a row in the table.
 @Entity
 @Table(name ="product_category")
-// @Data -- Known bug
-//when using OneToMany and ManyToOne Relationships
+//  @Data -- Known bug
+//  when using OneToMany and ManyToOne Relationships
 @Getter
 @Setter
 public class ProductCategory {

@@ -9,13 +9,13 @@ import java.util.Date;
 
 @Entity
 @Table(name = "product")
-//this is automatically generate the getter/setter methods for you behind the scenes
-//Reduce boilerplace code
+//  this is automatically generate the getter/setter methods for you behind the scenes
+//  Reduce boilerplace code
 @Data
 public class Product {
-    //generates Id
+    //  generates Id
     @Id
-    //Generated Value
+    //  Generated Value
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column( name = "id" )
     private Long id;
@@ -34,7 +34,7 @@ public class Product {
     private String description;
 
     @Column(name = "unit_price")
-    //A BigDecimal consists of an arbitrary precision integer unscaled value and a 32-bit integer scale.
+    //  A BigDecimal consists of an arbitrary precision integer unscaled value and a 32-bit integer scale.
     private BigDecimal unitPrice;
 
     @Column(name = "image_url" )
