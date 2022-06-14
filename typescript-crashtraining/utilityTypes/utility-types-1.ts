@@ -1,6 +1,6 @@
 interface MyUser {
   name: string;
-  id: string;
+  id: number;
   email?: string;
   phone?: string;
 }
@@ -19,7 +19,7 @@ console.log(
   merge(
     {
       name: "omar",
-      id: "4567",
+      id: 2,
       email: "omarBadranm93@hotmail.com"
     },
     { email: "omarBadranm293@hotmail.com" }
@@ -28,20 +28,23 @@ console.log(
 type RequiredMyUser = Required<MyUser>;
 type JustEmailAndName = Pick<MyUser, "email" | "name">;
 
+type UserWithoutId = Omit<MyUser, "id">;
+
 // Constructs an object type whose property keys are Keys and whose property values are Type.
 // This utility can be used to map the properties of a type to another type.
-const mapById = (users: MyUser[]): Record<string, MyUser> => {
+const mapById = (users: MyUser[]): Record<MyUser["id"], UserWithoutId> => {
   return users.reduce((accomulator, v) => {
+    const { id, ...other } = v;
     return {
       ...accomulator,
-      [v.id]: v
+      [id]: other
     };
   }, {});
 };
 
 console.log(
   mapById([
-    { id: "foo", name: "Mr.Foo" },
-    { id: "baz", name: "BAZ" }
+    { id: 1, name: "Mr.Foo" },
+    { id: 2, name: "BAZ" }
   ])
 );
