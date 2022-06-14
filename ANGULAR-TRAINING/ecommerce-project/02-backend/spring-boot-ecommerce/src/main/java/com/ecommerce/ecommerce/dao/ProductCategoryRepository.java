@@ -9,7 +9,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 // (i.e. CrudRepository/PagingAndSortingRepository/etc).
 // collection Resource Rel contains the Name of JSON entry
 // path will be the actual reference for the path product-category
-@RepositoryRestResource(collectionResourceRel = "productCategory", path = "product-category")
+@RepositoryRestResource(collectionResourceRel = "ProductCategory", path = "product-category")
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Long> {
 
 }
