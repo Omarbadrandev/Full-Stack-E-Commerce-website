@@ -1,0 +1,5 @@
+export default [
+  { "name": "Atreides", "planets": "Calladari" },
+  { "name": "Corrino", "planets": ["kaltan", "Salusa Secundu"] },
+  { "name": "Harkonnen", "planets": "Arrakis" }
+]
