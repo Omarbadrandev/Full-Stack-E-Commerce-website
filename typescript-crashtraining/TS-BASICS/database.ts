@@ -11,9 +11,11 @@ interface Persistable {
 }
 
 type DBKeyType = string | number | symbol;
+
 // RECORD:
 // Constructs an object type whose property keys are Keys and whose property values are Type.
 // This utility can be used to map the properties of a type to another type.
+
 class InMemoryDatabase<T, K extends DBKeyType> implements Database<T, K> {
   protected db: Record<K, T> = {} as Record<K, T>;
   get(id: K): T {
