@@ -1,25 +1,14 @@
-import houses from "./houses";
+import houses from "./houses.json";
 
 interface House {
   name: string;
   //union types
   planets: string | string[];
 }
-interface HouseWithId {
+interface HouseWithId extends House {
   id: number;
-  name: string;
-  planets: string | string[];
 }
 
-function findHouses(houses: string): HouseWithId[];
-function findHouses(
-  houses: string,
-  filter: (house: House) => boolean
-): HouseWithId[];
-function findHouses(
-  houses: House[],
-  filter: (house: House) => boolean
-): HouseWithId[];
 function findHouses(
   input: House[] | string,
   filter?: (house: House) => boolean
