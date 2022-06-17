@@ -12,12 +12,15 @@ abstract class StreetFighter {
 }
 
 class ChunLi extends StreetFighter {
+
   getSpecialAttack(): string {
     return "Lightning Kick";
   }
+
   get name(): string {
     return "Chun-Li";
   }
+  
 }
 
 class Ryu extends StreetFighter {
